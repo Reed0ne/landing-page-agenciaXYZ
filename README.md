@@ -1,4 +1,4 @@
-# 🌍 **Projeto Landing Page AgenciaXYZ **
+# 🌍 **Projeto Landing Page AgenciaXYZ**
 O landing-page-agenciaXYZ, é um protótipo de site de uma agencia, na qual tem como função a fixação do conteúdo de flex e grid das CSS.
 
 [<img src="src/images/readme.gif">](https://reed0ne.github.io/landing-page-agenciaXYZ/)
