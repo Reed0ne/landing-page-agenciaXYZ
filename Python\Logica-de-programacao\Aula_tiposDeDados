@@ -1,0 +1,425 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO65oln/Yp2hev2JdfqH0PP",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Reed0ne/landing-page-agenciaXYZ/blob/main/Python%5CLogica-de-programacao%5CAula_tiposDeDados\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2DKEw2HeBwQQ",
+        "outputId": "38c4d276-983e-4dfd-a9b8-1672b06c8b7c"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Olá, Mundo!\n"
+          ]
+        }
+      ],
+      "source": [
+        "print('Olá, Mundo!')"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nome = 'Danyel'\n",
+        "print(nome)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Nc0-_Ei0CR3W",
+        "outputId": "8246bf64-27b6-4e5b-d0bf-7e048fbce9b3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Danyel\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#DESCOBRIR TIPO DA VARIÁVEL\n",
+        "type(nome)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tcEx6P5qCp12",
+        "outputId": "d12ebda3-3b21-4d4b-c3dc-c5b94616d914"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "str"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 6
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 100      #int (inteiro)\n",
+        "b = 25.6     #float (float)\n",
+        "c = a > b    #bool (boolean)\n",
+        "d = 'Macaco' #str (string)\n",
+        "\n",
+        "type(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gC79EynfCtGP",
+        "outputId": "dff6a903-71c6-4685-9050-61946c979361"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "int"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 25
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "type(b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gwqy-ymvFecG",
+        "outputId": "afb7ac51-1c5b-4741-8eec-c1a608677d81"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "float"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 22
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "type(c)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZEtCWCboFiPI",
+        "outputId": "046f031c-ce78-44b2-8ff9-abf225c77acf"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "bool"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 23
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "type(d)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YgFwhEXEFe4-",
+        "outputId": "569b5112-f220-45c6-95f0-853e8c61a214"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "str"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 24
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 130 >= 100\n",
+        "b = 10 > 951\n",
+        "c = 'Danyel' == 'Danyel'\n",
+        "d = '52' == 52\n",
+        "e = 10 == (11-1)\n",
+        "f = 'Flamengo' != 'Internacional'"
+      ],
+      "metadata": {
+        "id": "_zlr4zLCEXad"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(a)\n",
+        "print(b)\n",
+        "print(c)\n",
+        "print(d)\n",
+        "print(e)\n",
+        "print(f)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oY6qPWX6LC9T",
+        "outputId": "b2cbb5df-c4a1-4148-f0a2-43f17c458590"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "True\n",
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "notaAprovacao = 7.0\n",
+        "notaAluno = 8.0\n",
+        "aluno = 'Walison'\n",
+        "\n",
+        "if(notaAprovacao <= notaAluno):\n",
+        "    print(aluno +' foi aprovado')\n",
+        "else:\n",
+        "    print(aluno +' não foi aprovado')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TzxGLnuWLQnD",
+        "outputId": "878b55cf-1980-4149-b10f-3203ee94179c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Walison foi aprovado\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#SE FOR MAIOR OU IGUAL A 7.0 PASSOU // SE FOR MAIOR OU IGUAL A 4 RECUPERAÇÃO // SE FOR MENOR QUE 4 SE FUDEU\n",
+        "\n",
+        "notaAluno = 5.6\n",
+        "\n",
+        "if(notaAluno >= 7):\n",
+        "  print(aluno + ' PASSOU')\n",
+        "elif(notaAluno >= 4):\n",
+        "  print(aluno + ' RECUPERAÇÃO')\n",
+        "else:\n",
+        "  print(aluno + ' SE FUDEU')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "h7wnHAGIO8gA",
+        "outputId": "cd58bbfe-156e-45d0-a338-4002e6d3faa2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Walison RECUPERAÇÃO\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if(notaAluno < 4):\n",
+        "  print(aluno + ' SE FUDEU')\n",
+        "elif(notaAluno < 7):\n",
+        "  print(aluno + ' RECUPERAÇÃO')\n",
+        "else:\n",
+        "  print(aluno + ' PASSOU')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ENgopRGlS7Kt",
+        "outputId": "4e486308-cf66-432d-bf3d-7f278784138d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Walison RECUPERAÇÃO\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "primeiraNota = float(input('Digite a primeira nota: '))\n",
+        "segundaNota = float(input('Digite a segunda nota: '))\n",
+        "print(primeiraNota + segundaNota)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vGZEJ1NbU9nb",
+        "outputId": "075f5ed3-b6ac-482f-e26c-f0f7b00899df"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a primeira nota: 8\n",
+            "Digite a segunda nota: 5\n",
+            "13.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "aluno = input('Digite o nome do aluno: ')\n",
+        "primeiraNota = float(input('Digite a primeira nota: '))\n",
+        "segundaNota = float(input('Digite a segunda nota: '))\n",
+        "terceiraNota = float(input('Digite a terceira nota: '))\n",
+        "\n",
+        "mediaDeProvas = (primeiraNota + segundaNota + terceiraNota) / 3\n",
+        "\n",
+        "print('\\nA sua média: ')\n",
+        "print(mediaDeProvas)\n",
+        "\n",
+        "if(mediaDeProvas < 4):\n",
+        "  print('\\n' + aluno + ' SE FUDEU')\n",
+        "elif(mediaDeProvas < 7):\n",
+        "  print('\\n' + aluno + ' RECUPERAÇÃO')\n",
+        "else:\n",
+        "  print('\\n' + aluno + ' PASSOU')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "btHz8uOwVqfb",
+        "outputId": "20a4e860-7a0e-4fbe-a258-603350852426"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o nome do aluno: Danyel\n",
+            "Digite a primeira nota: 9\n",
+            "Digite a segunda nota: 8\n",
+            "Digite a terceira nota: 5\n",
+            "\n",
+            "A sua média: \n",
+            "7.333333333333333\n",
+            "\n",
+            "Danyel PASSOU\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
